@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рабочий стол</title>
+    <link rel="stylesheet" href="{% static 'desktop.css' %}">
+</head>
+<body>
+    <main>
+        <div class="desktop-background"></div>
+        <div class="all-icon">
+            <a class="icon">
+                <div class="icon-content">
+                    <div class="icon-icon">
+                        <img src="{% static 'planet.svg' %}" width="80">
+                    </div>
+                    <p class="icon-title">База данных</p>
+                </div>
+            </a>
+            <a class="icon">
+                <div class="icon-content">
+                    <div class="icon-icon">
+                        <img src="images/uni.svg" width="65">
+                    </div>
+                    <p class="icon-title">Портал университета</p>
+                </div>
+            </a>
+            <a class="icon">
+                <div class="icon-content">
+                    <div class="icon-icon">
+                        <img src="images/music.svg" width="80">
+                    </div>
+                    <p class="icon-title">Музыка</p>
+                </div>
+            </a>
+            <a class="icon">
+                <div class="icon-content">
+                    <div class="icon-icon">
+                        <img src="images/notes.svg" width="80">
+                    </div>
+                    <p class="icon-title">Заметки</p>
+                </div>
+            </a>
+            <a class="icon">
+                <div class="icon-content">
+                    <div class="icon-icon">
+                        <img src="images/ad.svg" width="80">
+                    </div>
+                    <p class="icon-title">Реклама</p>
+                </div>
+            </a>
+            <a class="icon">
+                <div class="icon-content">
+                    <div class="icon-icon">
+                        <img src="images/vk.svg" width="70">
+                    </div>
+                    <p class="icon-title">Мы в ВК</p>
+                </div>
+            </a>
+        </div>
+
+        
+    </main>
+        
+    <footer>
+        <div><p class="log-out">LOG OUT</p></div>
+        <div id="clock"></div>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
