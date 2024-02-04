@@ -11,7 +11,7 @@
     <main>
         <div class="desktop-background"></div>
         <div class="all-icon">
-            <a class="icon">
+            <a class="icon" href="{% url 'policeServices:main' %}">
                 <div class="icon-content">
                     <div class="icon-icon">
                         <img src="{% static 'planet.svg' %}" width="80">
@@ -19,7 +19,7 @@
                     <p class="icon-title">База данных</p>
                 </div>
             </a>
-            <a class="icon">
+            <a class="icon" href="{% url 'university:main' %}">
                 <div class="icon-content">
                     <div class="icon-icon">
                         <img src="{% static 'uni.svg' %}" width="65">
@@ -27,7 +27,7 @@
                     <p class="icon-title">Портал университета</p>
                 </div>
             </a>
-            <a class="icon">
+            <a class="icon" target="_blank" href="https://music.yandex.ru/album/25999582/track/114152584">
                 <div class="icon-content">
                     <div class="icon-icon">
                         <img src="{% static 'music.svg' %}" width="80">
@@ -51,7 +51,7 @@
                     <p class="icon-title">Реклама</p>
                 </div>
             </a>
-            <a class="icon">
+            <a class="icon" target="_blank" href="https://vk.com/">
                 <div class="icon-content">
                     <div class="icon-icon">
                         <img src="{% static 'vk.svg' %}" width="70">
@@ -60,16 +60,12 @@
                 </div>
             </a>
         </div>
-
-        
     </main>
-        
     <footer>
-        <div><p class="log-out">ВЫХОД</p></div>
+        <div><a class="log-out" href="/logout/">ВЫХОД</a></div>
         <div id="clock"></div>
 
     </footer>
-    <script src="script.js"></script>
-    
+    <script src="{% static 'clocks.js' %}"></script>
 </body>
 </html>
