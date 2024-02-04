@@ -5,12 +5,13 @@ from django.contrib.auth.decorators import login_required
 
 
 def login_view(request):
+    if request.user.is_authenticated:
+        return redirect('desktop:desktop')
+
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
         user = authenticate(request, username=username, password=password)
-        print(username, password)
-
         if user is not None:
             login(request, user)
             return redirect('desktop:desktop')
@@ -26,3 +27,4 @@ def logout_view(request):
 @login_required(login_url='/login/')
 def desktop_view(request):
     return render(request, 'desktop.html')
+

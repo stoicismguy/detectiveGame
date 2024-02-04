@@ -3,14 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
     <title>Вход</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <div class="desktop-background"></div>
+    <form action="" method="POST" class="form">
         {% csrf_token %}
         <input type="text" name="username" id="username">
         <input type="password" name="password" id="password">
-        <button type="submit">Войти</button>
+        <button type="submit" class="submit-button">Войти</button>
     </form>
 </body>
 </html>
