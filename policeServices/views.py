@@ -7,4 +7,4 @@ from django.contrib.auth.decorators import login_required
 
 # @login_required(login_url='/sex/')
 def main_view(request):
-    return render(request, "")
+    return render(request, "base.html")
